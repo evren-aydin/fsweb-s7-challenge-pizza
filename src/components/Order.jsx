@@ -27,7 +27,7 @@ export default function Order(props){
    const history= useHistory();
    const handleSubmit =  async(e) => {
     e.preventDefault();
-    if(!isValid) return;
+    if(!isValid) return;//true değilse, try bloğundaki kodun çalışmasını engellemektir.
       try {
         
       const response = await axios.post('https://reqres.in/api/pizza', formData);
