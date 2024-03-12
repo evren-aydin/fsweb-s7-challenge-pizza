@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('Aciktim', () => {
+  it('input karakter sayisi', () => {
     cy.visit('http://localhost:5174/')
 
 
@@ -13,6 +13,25 @@ describe('template spec', () => {
     cy.get('[data-cy=name]').clear().type('abcd');
     cy.get('[data-cy=name]').should('have.value', 'abcd');
     cy.contains('Lütfen 3 karakterden fazla giriniz').should('not.exist');
+  })
+  it.only('Check', () => {
+    cy.visit('http://localhost:5174/')
+
+
+    cy.get('[data-cy=aciktim]').click();
+
+    cy.get('input[type="checkbox"]').first().check();
+    cy.get('input[type="checkbox"]').eq(1).check();
+    cy.get('input[type="checkbox"]').eq(2).check();
+    cy.contains('Lütfen en az 4 ve en fazla 10 malzeme seçiniz.'); 
+
+    
+    cy.get('input[type="checkbox"]').first().check();
+    cy.get('input[type="checkbox"]').eq(1).check();
+    cy.get('input[type="checkbox"]').eq(2).check();
+    cy.get('input[type="checkbox"]').eq(3).check();
+    cy.get('input[type="checkbox"]').eq(4).check();
+    cy.contains('Lütfen en az 4 ve en fazla 10 malzeme seçiniz.').should('not.exist');
   })
 
   it('submit form', () => {
