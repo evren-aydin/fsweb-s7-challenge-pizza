@@ -1,24 +1,24 @@
 import {Link } from 'react-router-dom';
-import logo from "../Assets/mile1-assets/logo.svg";
-import menu1 from "../Assets/mile2-aseets/icons/1.svg";
-import menu2 from "../Assets/mile2-aseets/icons/2.svg";
-import menu3 from "../Assets/mile2-aseets/icons/3.svg";
-import menu4 from "../Assets/mile2-aseets/icons/4.svg";
-import menu5 from "../Assets/mile2-aseets/icons/5.svg";
-import menu6 from "../Assets/mile2-aseets/icons/6.svg";
-import food1 from "../Assets/mile2-aseets/pictures/food-1.png";
-import food2 from "../Assets/mile2-aseets/pictures/food-2.png";
-import food3 from "../Assets/mile2-aseets/pictures/food-3.png";
-import logoFooter from "../Assets/mile2-aseets/footer/logo-footer.svg";
-import icon1 from "../Assets/mile2-aseets/footer/icons/icon-1.png";
-import icon2 from "../Assets/mile2-aseets/footer/icons/icon-2.png";
-import icon3 from "../Assets/mile2-aseets/footer/icons/icon-3.png";
-import li0 from "../Assets/mile2-aseets/footer/insta/li-0.png";
-import li1 from "../Assets/mile2-aseets/footer/insta/li-1.png";
-import li2 from "../Assets/mile2-aseets/footer/insta/li-2.png";
-import li3 from "../Assets/mile2-aseets/footer/insta/li-3.png";
-import li4 from "../Assets/mile2-aseets/footer/insta/li-4.png";
-import li5 from "../Assets/mile2-aseets/footer/insta/li-5.png";
+import logo from "/mile1-assets/logo.svg";
+import menu1 from "/mile2-aseets/icons/1.svg";
+import menu2 from "/mile2-aseets/icons/2.svg";
+import menu3 from "/mile2-aseets/icons/3.svg";
+import menu4 from "/mile2-aseets/icons/4.svg";
+import menu5 from "/mile2-aseets/icons/5.svg";
+import menu6 from "/mile2-aseets/icons/6.svg";
+import food1 from "/mile2-aseets/pictures/food-1.png";
+import food2 from "/mile2-aseets/pictures/food-2.png";
+import food3 from "/mile2-aseets/pictures/food-3.png";
+import logoFooter from "/mile2-aseets/footer/logo-footer.svg";
+import icon1 from "/mile2-aseets/footer/icons/icon-1.png";
+import icon2 from "/mile2-aseets/footer/icons/icon-2.png";
+import icon3 from "/mile2-aseets/footer/icons/icon-3.png";
+import li0 from "/mile2-aseets/footer/insta/li-0.png";
+import li1 from "/mile2-aseets/footer/insta/li-1.png";
+import li2 from "/mile2-aseets/footer/insta/li-2.png";
+import li3 from "/mile2-aseets/footer/insta/li-3.png";
+import li4 from "/mile2-aseets/footer/insta/li-4.png";
+import li5 from "/mile2-aseets/footer/insta/li-5.png";
 function Home() {
  
 
