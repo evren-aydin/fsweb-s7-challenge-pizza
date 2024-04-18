@@ -5,7 +5,7 @@ function Success(props) {
 const {formData}= props;
 
   return (
-    <>
+    
 <body className="bg-red-600 w-screen h-screen justify-center flex text-center">
     <div className="basis-1/3"></div>
     <div className="basis-1/3">
@@ -21,7 +21,7 @@ const {formData}= props;
 
 
         </div>
-    <div class="border"></div>
+    <div className="border"></div>
 
     <div className="flex justify-center items-center flex-col" >
       <p className="text-white mt-8 text-2xl">{formData.baslik}</p>
@@ -51,7 +51,7 @@ const {formData}= props;
     </div>
     <div className="basis-1/3"></div>
     </body>
-    </>
+    
   )
 }
 

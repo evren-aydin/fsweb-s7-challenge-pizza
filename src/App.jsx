@@ -18,7 +18,7 @@ function App() {
     ekMalzemeler: [],
   });
   const [isValid, setIsValid] = useState(false);
-  
+
   const [errors, setErrors] = useState({isim:false,checkbox:false});
 
   const [checkError,setCheckError]= useState(false);
@@ -39,13 +39,13 @@ const handleCheckboxChange = async (malzeme) => {
     ekMalzemeler: updatedMalzemeler,
   }));
 
-  // Validasyon: En az 4 malzeme seçilmiş olmalı, en fazla 10 malzeme seçilebilir
+  
   if (formData.ekMalzemeler.length >= 3 && formData.ekMalzemeler.length <= 10) {
     setCheckError(false);
-    // Formu gönderme veya başka bir işlem yapma
+    
     console.log('Seçilen malzemelerle birlikte gönderilen form:', formData.ekMalzemeler);
   } else {
-    // Hata mesajı veya başka bir geri bildirim mekanizması
+    
     setCheckError(true);
     console.error('Lütfen en az 4 ve en fazla 10 malzeme seçiniz.');
   }
@@ -55,23 +55,24 @@ const handleCheckboxChange = async (malzeme) => {
 
   const handleInputChange = (event) => {
    const { name, value } = event.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
-    if(name=="isim"){
+    
+  if(name=="isim"){
    if(value.trim().length>=3){
       setErrors({...errors, [name]:false});
     }else{
       setErrors({...errors, [name]:true});
     }}
 
+  setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
   };
 
   
   
 
-useEffect(()=>{
+useEffect(()=>{     //isValid controller
     if(formData.isim.length>=3 && (formData.ekMalzemeler.length >= 4 && formData.ekMalzemeler.length <= 10)){
       setIsValid(true);
     }else{

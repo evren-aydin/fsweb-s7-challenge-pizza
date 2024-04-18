@@ -37,7 +37,7 @@ export default function Order(props){
 
       } catch (error) {
         console.error('API Request Error:', error);
-        alert("Internete Bağlanılamadı !!!")
+        alert("Internete Bağlanılamadı !!!");
       } 
 
   };

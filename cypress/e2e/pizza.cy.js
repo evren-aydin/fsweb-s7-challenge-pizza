@@ -14,7 +14,7 @@ describe('template spec', () => {
     cy.get('[data-cy=name]').should('have.value', 'abcd');
     cy.contains('Lütfen 3 karakterden fazla giriniz').should('not.exist');
   })
-  it.only('Check', () => {
+  it('Check', () => {
     cy.visit('http://localhost:5174/')
 
 
